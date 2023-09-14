@@ -1,0 +1,33 @@
+object FPeriod: TFPeriod
+  Left = 985
+  Height = 447
+  Top = 128
+  Width = 657
+  Caption = 'Périodes'
+  ClientHeight = 447
+  ClientWidth = 657
+  OnShow = FormShow
+  LCLVersion = '2.2.6.0'
+  object ListBox1: TListBox
+    Left = 24
+    Height = 304
+    Top = 32
+    Width = 232
+    ItemHeight = 0
+    TabOrder = 0
+  end
+  object SQLPeriodList: TSQLQuery
+    FieldDefs = <>
+    Database = FPpale.SQLite3Connection1
+    Transaction = FPpale.SQLTransaction1
+    Params = <>
+    Macros = <>
+    Left = 117
+    Top = 393
+  end
+  object DSPeriod: TDataSource
+    DataSet = SQLPeriodList
+    Left = 184
+    Top = 393
+  end
+end

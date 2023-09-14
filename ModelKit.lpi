@@ -26,6 +26,9 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="zcomponent"/>
+      </Item>
+      <Item>
         <PackageName Value="sqlite3laz"/>
       </Item>
       <Item>
@@ -47,6 +50,14 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Ppale"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uperiod.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FPeriod"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UPeriod"/>
       </Unit>
     </Units>
   </ProjectOptions>

@@ -1,17 +1,19 @@
 object FPpale: TFPpale
-  Left = 418
-  Height = 798
-  Top = 135
+  Left = 345
+  Height = 658
+  Top = 223
   Width = 1330
   Caption = 'Models Kit Database'
-  ClientHeight = 798
+  ClientHeight = 638
   ClientWidth = 1330
+  FormStyle = fsMDIForm
+  Menu = MainMenu1
   OnCreate = FormCreate
   LCLVersion = '2.2.6.0'
   object StatusBar1: TStatusBar
     Left = 0
     Height = 23
-    Top = 775
+    Top = 615
     Width = 1330
     Panels = <    
       item
@@ -24,114 +26,9 @@ object FPpale: TFPpale
       end>
     SimplePanel = False
   end
-  object PageControl1: TPageControl
-    Left = 0
-    Height = 775
-    Top = 0
-    Width = 1330
-    ActivePage = TSKit
-    Align = alClient
-    TabIndex = 2
-    TabOrder = 1
-    object TSTemp: TTabSheet
-      Caption = 'Rien'
-      ClientHeight = 747
-      ClientWidth = 1322
-      object DBGrid1: TDBGrid
-        Left = 232
-        Height = 100
-        Top = 296
-        Width = 200
-        Color = clWindow
-        Columns = <>
-        DataSource = DataSource1
-        TabOrder = 0
-      end
-      object DBComboBox1: TDBComboBox
-        Left = 440
-        Height = 23
-        Top = 184
-        Width = 100
-        DataField = 'name'
-        DataSource = DataSource1
-        DoubleBuffered = True
-        ItemHeight = 15
-        MaxLength = 0
-        ParentDoubleBuffered = False
-        TabOrder = 1
-      end
-      object DBMemo1: TDBMemo
-        Left = 626
-        Height = 90
-        Top = 117
-        Width = 150
-        DataField = 'name'
-        DataSource = DataSource1
-        TabOrder = 2
-      end
-    end
-    object TSParams: TTabSheet
-      Caption = 'Paramètres'
-      ClientHeight = 747
-      ClientWidth = 1322
-      object PageControl3: TPageControl
-        Left = 0
-        Height = 747
-        Top = 0
-        Width = 1322
-        ActivePage = TSModel
-        Align = alClient
-        TabIndex = 6
-        TabOrder = 0
-        object TSPeriod: TTabSheet
-          Caption = 'Périodes'
-        end
-        object TSBuilder: TTabSheet
-          Caption = 'Constructeurs'
-        end
-        object TSBrand: TTabSheet
-          Caption = 'Marques'
-        end
-        object TSCategory: TTabSheet
-          Caption = 'Catégories'
-        end
-        object TSScale: TTabSheet
-          Caption = 'Echelles'
-        end
-        object TSCountry: TTabSheet
-          Caption = 'Pays'
-        end
-        object TSModel: TTabSheet
-          Caption = 'Modèles'
-        end
-      end
-    end
-    object TSKit: TTabSheet
-      Caption = 'Mes kits'
-      ClientHeight = 747
-      ClientWidth = 1322
-      object PageControl2: TPageControl
-        Left = 0
-        Height = 747
-        Top = 0
-        Width = 1322
-        ActivePage = TSChooseKit
-        Align = alClient
-        TabIndex = 1
-        TabOrder = 0
-        object TSStock: TTabSheet
-          Caption = 'Mon Stock'
-        end
-        object TSChooseKit: TTabSheet
-          Caption = 'Choisir un kit'
-        end
-      end
-    end
-  end
   object SQLite3Connection1: TSQLite3Connection
     Connected = True
     LoginPrompt = False
-    AfterConnect = SQLite3Connection1AfterConnect
     DatabaseName = 'C:\Users\warth\projects\lazarus\modelsKit\modelskit.db'
     KeepConnection = False
     Transaction = SQLTransaction1
@@ -139,12 +36,7 @@ object FPpale: TFPpale
     Left = 160
     Top = 728
   end
-  object DataSource1: TDataSource
-    DataSet = SQLQuery1
-    Left = 248
-    Top = 728
-  end
-  object SQLQuery1: TSQLQuery
+  object queryList: TSQLQuery
     IndexName = 'DEFAULT_ORDER'
     MaxIndexesCount = 4
     FieldDefs = <    
@@ -159,11 +51,10 @@ object FPpale: TFPpale
         DataType = ftAutoInc
         Precision = -1
       end>
-    Active = True
     Database = SQLite3Connection1
     Transaction = SQLTransaction1
     SQL.Strings = (
-      'SELECT CAST("name" as VARCHAR) as name,id from country;'
+      ''
     )
     Params = <>
     Macros = <>
@@ -175,5 +66,19 @@ object FPpale: TFPpale
     Database = SQLite3Connection1
     Left = 80
     Top = 728
+  end
+  object MainMenu1: TMainMenu
+    Left = 118
+    Top = 40
+    object MIParams: TMenuItem
+      Caption = 'paramètres'
+      object MIPeriod: TMenuItem
+        Caption = 'Périodes'
+        OnClick = MIPeriodClick
+      end
+      object MI2: TMenuItem
+        Caption = 'Constructeurs'
+      end
+    end
   end
 end
