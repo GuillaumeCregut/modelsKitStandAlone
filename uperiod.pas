@@ -14,7 +14,7 @@ type
 
   TFPeriod = class(TForm)
     DSPeriod: TDataSource;
-    ListBox1: TListBox;
+    LBPeriod: TListBox;
     SQLPeriodList: TSQLQuery;
     procedure FormShow(Sender: TObject);
   private
@@ -43,7 +43,7 @@ begin
   SQLPeriodList.Close;
   SQLPeriodList.sql.Clear;
   //Load good query of period
-  sql:='SELECT name from period';
+  sql:='SELECT id,name from period';
   SQLPeriodList.SQL.Add(sql);
   SQLPeriodList.ExecSQL;
   SQLPeriodList.Open;
@@ -51,7 +51,7 @@ begin
   for i:=0 to count-1 do
   begin
     nameItem:=DSPeriod.DataSet.FieldByName('name').value;
-    ListBox1.Items.add(nameItem);
+    LBPeriod.Items.add(nameItem);
     DSPeriod.DataSet.Next;
   end;
   SQLPeriodList.Close;

@@ -59,6 +59,48 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="UPeriod"/>
       </Unit>
+      <Unit>
+        <Filename Value="ubuilder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FBuilder"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UBuilder"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ubrand.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FBrand"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UBrand"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ucategory.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCategories"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UCategory"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uscale.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FScales"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UScale"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ucountries.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCountries"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uCountries"/>
+      </Unit>
+      <Unit>
+        <Filename Value="umodels.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FModels"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uModels"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

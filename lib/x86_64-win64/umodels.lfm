@@ -1,0 +1,32 @@
+object FModels: TFModels
+  Left = 1261
+  Height = 449
+  Top = 263
+  Width = 651
+  Caption = 'Modèles'
+  ClientHeight = 449
+  ClientWidth = 651
+  LCLVersion = '2.2.6.0'
+  object LBModel: TListBox
+    Left = 24
+    Height = 296
+    Top = 40
+    Width = 232
+    ItemHeight = 0
+    TabOrder = 0
+  end
+  object QueryModel: TSQLQuery
+    FieldDefs = <>
+    Database = FPpale.SQLite3Connection1
+    Transaction = FPpale.SQLTransaction1
+    Params = <>
+    Macros = <>
+    Left = 536
+    Top = 16
+  end
+  object DSModel: TDataSource
+    DataSet = QueryModel
+    Left = 608
+    Top = 8
+  end
+end

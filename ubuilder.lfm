@@ -1,0 +1,32 @@
+object FBuilder: TFBuilder
+  Left = 1004
+  Height = 451
+  Top = 424
+  Width = 661
+  Caption = 'Constructeurs'
+  ClientHeight = 451
+  ClientWidth = 661
+  LCLVersion = '2.2.6.0'
+  object LBBuilder: TListBox
+    Left = 40
+    Height = 304
+    Top = 32
+    Width = 232
+    ItemHeight = 0
+    TabOrder = 0
+  end
+  object QueryBuilder: TSQLQuery
+    FieldDefs = <>
+    Database = FPpale.SQLite3Connection1
+    Transaction = FPpale.SQLTransaction1
+    Params = <>
+    Macros = <>
+    Left = 600
+    Top = 8
+  end
+  object DSBuilder: TDataSource
+    DataSet = QueryBuilder
+    Left = 536
+    Top = 8
+  end
+end

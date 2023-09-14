@@ -1,7 +1,7 @@
 object FPpale: TFPpale
-  Left = 345
+  Left = 303
   Height = 658
-  Top = 223
+  Top = 773
   Width = 1330
   Caption = 'Models Kit Database'
   ClientHeight = 638
@@ -76,9 +76,33 @@ object FPpale: TFPpale
         Caption = 'Périodes'
         OnClick = MIPeriodClick
       end
-      object MI2: TMenuItem
+      object MIBuilder: TMenuItem
         Caption = 'Constructeurs'
+        OnClick = MIBuilderClick
       end
+      object MIBrand: TMenuItem
+        Caption = 'Marques'
+        OnClick = MIBrandClick
+      end
+      object MICategories: TMenuItem
+        Caption = 'Categories'
+        OnClick = MICategoriesClick
+      end
+      object MIScale: TMenuItem
+        Caption = 'Echelles'
+        OnClick = MIScaleClick
+      end
+      object MICountries: TMenuItem
+        Caption = 'Pays'
+        OnClick = MICountriesClick
+      end
+      object MIModels: TMenuItem
+        Caption = 'Modèles'
+        OnClick = MIModelsClick
+      end
+    end
+    object MIMyKits: TMenuItem
+      Caption = 'Mes Kits'
     end
   end
 end

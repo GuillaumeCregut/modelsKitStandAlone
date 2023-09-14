@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, DB, BufDataset, SQLite3DS, SQLite3Conn, SQLDB, Forms,
   Controls, Graphics, Dialogs, DBGrids, DBCtrls, ComCtrls, StdCtrls, Grids,
-  Menus, UPeriod;
+  Menus, UPeriod, UBuilder,UBrand,UCategory,uModels,UScale,uCountries;
 
 type
 
@@ -15,17 +15,27 @@ type
 
   TFPpale = class(TForm)
     MainMenu1: TMainMenu;
+    MIMyKits: TMenuItem;
+    MIModels: TMenuItem;
+    MIBrand: TMenuItem;
+    MICategories: TMenuItem;
+    MIScale: TMenuItem;
+    MICountries: TMenuItem;
     MIPeriod: TMenuItem;
-    MI2: TMenuItem;
+    MIBuilder: TMenuItem;
     MIParams: TMenuItem;
     SQLite3Connection1: TSQLite3Connection;
     queryList: TSQLQuery;
     SQLTransaction1: TSQLTransaction;
     StatusBar1: TStatusBar;
     procedure FormCreate(Sender: TObject);
+    procedure MIBuilderClick(Sender: TObject);
+    procedure MIBrandClick(Sender: TObject);
+    procedure MICategoriesClick(Sender: TObject);
+    procedure MICountriesClick(Sender: TObject);
+    procedure MIModelsClick(Sender: TObject);
     procedure MIPeriodClick(Sender: TObject);
-    procedure PageControl1Change(Sender: TObject);
-    procedure PageControl3Change(Sender: TObject);
+    procedure MIScaleClick(Sender: TObject);
     procedure TSTempShow(Sender: TObject);
   private
 
@@ -65,23 +75,42 @@ begin
   SQLite3Connection1.DatabaseName:=basePath+'modelskit.db';
 end;
 
+procedure TFPpale.MIBuilderClick(Sender: TObject);
+begin
+  FBuilder.ShowModal;
+end;
+
+procedure TFPpale.MIBrandClick(Sender: TObject);
+begin
+  FBrand.ShowModal;
+end;
+
+procedure TFPpale.MICategoriesClick(Sender: TObject);
+begin
+  FCategories.ShowModal;
+end;
+
+procedure TFPpale.MICountriesClick(Sender: TObject);
+begin
+  FCountries.ShowModal;
+end;
+
+procedure TFPpale.MIModelsClick(Sender: TObject);
+begin
+  FModels.ShowModal;
+end;
+
 procedure TFPpale.MIPeriodClick(Sender: TObject);
 begin
   FPeriod.ShowModal;
 end;
 
-
-procedure TFPpale.PageControl1Change(Sender: TObject);
+procedure TFPpale.MIScaleClick(Sender: TObject);
 begin
-  //queryList.Close;
-  //queryList.sql.Clear;
+  FScales.ShowModal;
 end;
 
-procedure TFPpale.PageControl3Change(Sender: TObject);
-begin
-  //queryList.Close;
-  //queryList.sql.Clear;
-end;
+
 
 
 
