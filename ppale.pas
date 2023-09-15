@@ -6,42 +6,41 @@ interface
 
 uses
   Classes, SysUtils, DB, BufDataset, SQLite3DS, SQLite3Conn, SQLDB, Forms,
-  Controls, Graphics, Dialogs, DBGrids, DBCtrls, ComCtrls;
+  Controls, Graphics, Dialogs, DBGrids, DBCtrls, ComCtrls, StdCtrls, Grids,
+  Menus, UPeriod, UBuilder,UBrand,UCategory,uModels,UScale,uCountries;
 
 type
 
   { TFPpale }
 
   TFPpale = class(TForm)
-    DataSource1: TDataSource;
-    DBComboBox1: TDBComboBox;
-    DBGrid1: TDBGrid;
-    DBMemo1: TDBMemo;
-    PageControl1: TPageControl;
-    PageControl2: TPageControl;
-    PageControl3: TPageControl;
+    MainMenu1: TMainMenu;
+    MIMyKits: TMenuItem;
+    MIModels: TMenuItem;
+    MIBrand: TMenuItem;
+    MICategories: TMenuItem;
+    MIScale: TMenuItem;
+    MICountries: TMenuItem;
+    MIPeriod: TMenuItem;
+    MIBuilder: TMenuItem;
+    MIParams: TMenuItem;
     SQLite3Connection1: TSQLite3Connection;
-    SQLQuery1: TSQLQuery;
-    SQLTransaction1: TSQLTransaction;
+    queryList: TSQLQuery;
+    SQLTansac: TSQLTransaction;
     StatusBar1: TStatusBar;
-    TSChooseKit: TTabSheet;
-    TSStock: TTabSheet;
-    TSModel: TTabSheet;
-    TSCountry: TTabSheet;
-    TSScale: TTabSheet;
-    TSCategory: TTabSheet;
-    TSBrand: TTabSheet;
-    TSBuilder: TTabSheet;
-    TSPeriod: TTabSheet;
-    TSKit: TTabSheet;
-    TSTemp: TTabSheet;
-    TSParams: TTabSheet;
     procedure FormCreate(Sender: TObject);
-    procedure SQLite3Connection1AfterConnect(Sender: TObject);
+    procedure MIBuilderClick(Sender: TObject);
+    procedure MIBrandClick(Sender: TObject);
+    procedure MICategoriesClick(Sender: TObject);
+    procedure MICountriesClick(Sender: TObject);
+    procedure MIModelsClick(Sender: TObject);
+    procedure MIPeriodClick(Sender: TObject);
+    procedure MIScaleClick(Sender: TObject);
+    procedure TSTempShow(Sender: TObject);
   private
 
   public
-
+     dbNameAccess : string;
   end;
 
 var
@@ -53,15 +52,67 @@ implementation
 
 { TFPpale }
 
-procedure TFPpale.SQLite3Connection1AfterConnect(Sender: TObject);
-begin
 
+
+
+
+
+
+procedure TFPpale.TSTempShow(Sender: TObject);
+begin
+  //To be remove
+ // MessageDlg('toto','Bonjour',mtConfirmation,[mbOk],0,mbOK);
 end;
+
+
 
 procedure TFPpale.FormCreate(Sender: TObject);
+var
+  basePath : string;
 begin
-  SQLite3Connection1.DatabaseName:='c:\users\wart\projects\lazarus\modelsKit\modelskit.db';
+  basePath:=ExtractFilePath(Application.exeName);
+  dbNameAccess:=basePath+'modelskit.db';
+  SQLite3Connection1.DatabaseName:=basePath+'modelskit.db';
 end;
+
+procedure TFPpale.MIBuilderClick(Sender: TObject);
+begin
+  FBuilder.ShowModal;
+end;
+
+procedure TFPpale.MIBrandClick(Sender: TObject);
+begin
+  FBrand.ShowModal;
+end;
+
+procedure TFPpale.MICategoriesClick(Sender: TObject);
+begin
+  FCategories.ShowModal;
+end;
+
+procedure TFPpale.MICountriesClick(Sender: TObject);
+begin
+  FCountries.ShowModal;
+end;
+
+procedure TFPpale.MIModelsClick(Sender: TObject);
+begin
+  FModels.ShowModal;
+end;
+
+procedure TFPpale.MIPeriodClick(Sender: TObject);
+begin
+  FPeriod.ShowModal;
+end;
+
+procedure TFPpale.MIScaleClick(Sender: TObject);
+begin
+  FScales.ShowModal;
+end;
+
+
+
+
 
 end.
 

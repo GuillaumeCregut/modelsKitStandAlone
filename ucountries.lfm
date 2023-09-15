@@ -1,0 +1,32 @@
+object FCountries: TFCountries
+  Left = 1263
+  Height = 435
+  Top = 589
+  Width = 651
+  Caption = 'Pays'
+  ClientHeight = 435
+  ClientWidth = 651
+  LCLVersion = '2.2.6.0'
+  object LBCountry: TListBox
+    Left = 32
+    Height = 288
+    Top = 48
+    Width = 224
+    ItemHeight = 0
+    TabOrder = 0
+  end
+  object QueryCountry: TSQLQuery
+    FieldDefs = <>
+    Database = FPpale.SQLite3Connection1
+    Transaction = FPpale.SQLTansac
+    Params = <>
+    Macros = <>
+    Left = 544
+    Top = 8
+  end
+  object DSCountry: TDataSource
+    DataSet = QueryCountry
+    Left = 600
+    Top = 8
+  end
+end

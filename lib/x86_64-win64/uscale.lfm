@@ -1,0 +1,32 @@
+object FScales: TFScales
+  Left = 655
+  Height = 451
+  Top = 422
+  Width = 658
+  Caption = 'Echelles'
+  ClientHeight = 451
+  ClientWidth = 658
+  LCLVersion = '2.2.6.0'
+  object LBScale: TListBox
+    Left = 40
+    Height = 304
+    Top = 32
+    Width = 232
+    ItemHeight = 0
+    TabOrder = 0
+  end
+  object QureyScale: TSQLQuery
+    FieldDefs = <>
+    Database = FPpale.SQLite3Connection1
+    Transaction = FPpale.SQLTansac
+    Params = <>
+    Macros = <>
+    Left = 616
+    Top = 8
+  end
+  object DSScale: TDataSource
+    DataSet = QureyScale
+    Left = 560
+    Top = 8
+  end
+end

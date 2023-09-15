@@ -26,6 +26,9 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="zcomponent"/>
+      </Item>
+      <Item>
         <PackageName Value="sqlite3laz"/>
       </Item>
       <Item>
@@ -47,6 +50,62 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Ppale"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uperiod.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FPeriod"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UPeriod"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ubuilder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FBuilder"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UBuilder"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ubrand.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FBrand"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UBrand"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ucategory.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCategories"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UCategory"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uscale.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FScales"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UScale"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ucountries.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCountries"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uCountries"/>
+      </Unit>
+      <Unit>
+        <Filename Value="umodels.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FModels"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uModels"/>
       </Unit>
     </Units>
   </ProjectOptions>

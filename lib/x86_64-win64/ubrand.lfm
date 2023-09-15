@@ -1,0 +1,32 @@
+object FBrand: TFBrand
+  Left = 1251
+  Height = 445
+  Top = 145
+  Width = 658
+  Caption = 'Marques'
+  ClientHeight = 445
+  ClientWidth = 658
+  LCLVersion = '2.2.6.0'
+  object LBBrand: TListBox
+    Left = 32
+    Height = 304
+    Top = 32
+    Width = 240
+    ItemHeight = 0
+    TabOrder = 0
+  end
+  object QueryBrand: TSQLQuery
+    FieldDefs = <>
+    Database = FPpale.SQLite3Connection1
+    Transaction = FPpale.SQLTansac
+    Params = <>
+    Macros = <>
+    Left = 552
+    Top = 16
+  end
+  object DSBrand: TDataSource
+    DataSet = QueryBrand
+    Left = 608
+    Top = 16
+  end
+end
