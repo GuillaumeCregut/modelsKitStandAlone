@@ -1,7 +1,7 @@
 object FPpale: TFPpale
-  Left = 303
+  Left = 327
   Height = 658
-  Top = 773
+  Top = 168
   Width = 1330
   Caption = 'Models Kit Database'
   ClientHeight = 638
@@ -31,7 +31,7 @@ object FPpale: TFPpale
     LoginPrompt = False
     DatabaseName = 'C:\Users\warth\projects\lazarus\modelsKit\modelskit.db'
     KeepConnection = False
-    Transaction = SQLTransaction1
+    Transaction = SQLTansac
     AlwaysUseBigint = False
     Left = 160
     Top = 728
@@ -52,7 +52,7 @@ object FPpale: TFPpale
         Precision = -1
       end>
     Database = SQLite3Connection1
-    Transaction = SQLTransaction1
+    Transaction = SQLTansac
     SQL.Strings = (
       ''
     )
@@ -61,8 +61,9 @@ object FPpale: TFPpale
     Left = 16
     Top = 728
   end
-  object SQLTransaction1: TSQLTransaction
+  object SQLTansac: TSQLTransaction
     Active = True
+    Action = caCommit
     Database = SQLite3Connection1
     Left = 80
     Top = 728

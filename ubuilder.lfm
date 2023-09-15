@@ -6,6 +6,7 @@ object FBuilder: TFBuilder
   Caption = 'Constructeurs'
   ClientHeight = 451
   ClientWidth = 661
+  Position = poMainFormCenter
   LCLVersion = '2.2.6.0'
   object LBBuilder: TListBox
     Left = 40
@@ -18,7 +19,7 @@ object FBuilder: TFBuilder
   object QueryBuilder: TSQLQuery
     FieldDefs = <>
     Database = FPpale.SQLite3Connection1
-    Transaction = FPpale.SQLTransaction1
+    Transaction = FPpale.SQLTansac
     Params = <>
     Macros = <>
     Left = 600

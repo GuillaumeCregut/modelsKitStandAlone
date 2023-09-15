@@ -1,25 +1,83 @@
 object FPeriod: TFPeriod
-  Left = 1264
+  Left = 430
   Height = 445
-  Top = 378
+  Top = 177
   Width = 657
   Caption = 'Périodes'
   ClientHeight = 445
   ClientWidth = 657
   OnShow = FormShow
+  Position = poMainFormCenter
   LCLVersion = '2.2.6.0'
   object LBPeriod: TListBox
-    Left = 24
-    Height = 304
-    Top = 32
+    Left = 16
+    Height = 336
+    Top = 56
     Width = 232
     ItemHeight = 0
+    OnDblClick = LBPeriodDblClick
+    PopupMenu = PopupMenu1
     TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 21
+    Top = 16
+    Width = 213
+    Caption = 'Liste des périodes enregistrées'
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
+  end
+  object GroupBox1: TGroupBox
+    Left = 272
+    Height = 192
+    Top = 152
+    Width = 353
+    Caption = 'Ajouter / Modifier'
+    ClientHeight = 172
+    ClientWidth = 349
+    TabOrder = 1
+    object Label3: TLabel
+      Left = 8
+      Height = 21
+      Top = 8
+      Width = 46
+      Caption = 'Nom : '
+      Font.Height = -16
+      ParentColor = False
+      ParentFont = False
+    end
+    object EPeriodName: TEdit
+      Left = 16
+      Height = 23
+      Top = 40
+      Width = 288
+      OnChange = EPeriodNameChange
+      TabOrder = 0
+    end
+    object BAddPeriod: TButton
+      Left = 39
+      Height = 25
+      Top = 105
+      Width = 75
+      Caption = 'Ajouter'
+      OnClick = BAddPeriodClick
+      TabOrder = 1
+    end
+    object BUpdatePeriod: TButton
+      Left = 200
+      Height = 25
+      Top = 105
+      Width = 75
+      Caption = 'Modifier'
+      TabOrder = 2
+    end
   end
   object SQLPeriodList: TSQLQuery
     FieldDefs = <>
     Database = FPpale.SQLite3Connection1
-    Transaction = FPpale.SQLTransaction1
+    Transaction = FPpale.SQLTansac
     Params = <>
     Macros = <>
     Left = 528
@@ -29,5 +87,17 @@ object FPeriod: TFPeriod
     DataSet = SQLPeriodList
     Left = 592
     Top = 24
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 315
+    Top = 53
+    object PUMIDelete: TMenuItem
+      Caption = 'Supprimer'
+      OnClick = PUMIDeleteClick
+    end
+    object PUMUpdate: TMenuItem
+      Caption = 'Modifier'
+      OnClick = PUMUpdateClick
+    end
   end
 end

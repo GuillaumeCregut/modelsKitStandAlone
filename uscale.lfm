@@ -18,7 +18,7 @@ object FScales: TFScales
   object QureyScale: TSQLQuery
     FieldDefs = <>
     Database = FPpale.SQLite3Connection1
-    Transaction = FPpale.SQLTransaction1
+    Transaction = FPpale.SQLTansac
     Params = <>
     Macros = <>
     Left = 616

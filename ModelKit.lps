@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="43" Y="22"/>
-        <UsageCount Value="38"/>
+        <UsageCount Value="42"/>
       </Unit>
       <Unit>
         <Filename Value="ppale.pas"/>
@@ -19,9 +19,98 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Ppale"/>
-        <TopLine Value="71"/>
-        <CursorPos X="20" Y="100"/>
-        <UsageCount Value="38"/>
+        <TopLine Value="25"/>
+        <CursorPos Y="86"/>
+        <UsageCount Value="42"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uperiod.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FPeriod"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UPeriod"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="54"/>
+        <CursorPos X="9" Y="52"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ubuilder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FBuilder"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UBuilder"/>
+        <EditorIndex Value="4"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ubrand.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FBrand"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UBrand"/>
+        <EditorIndex Value="5"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ucategory.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCategories"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UCategory"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="22"/>
+        <CursorPos X="27" Y="45"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uscale.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FScales"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UScale"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ucountries.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FCountries"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uCountries"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="umodels.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FModels"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uModels"/>
+        <EditorIndex Value="3"/>
+        <UsageCount Value="25"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -33,20 +122,6 @@
         <EditorIndex Value="-1"/>
         <CursorPos X="3" Y="19"/>
         <UsageCount Value="21"/>
-      </Unit>
-      <Unit>
-        <Filename Value="uperiod.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="FPeriod"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UPeriod"/>
-        <EditorIndex Value="7"/>
-        <TopLine Value="28"/>
-        <CursorPos X="37" Y="28"/>
-        <UsageCount Value="24"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="ModelKit.lpi"/>
@@ -63,180 +138,127 @@
         <CursorPos Y="2979"/>
         <UsageCount Value="10"/>
       </Unit>
-      <Unit>
-        <Filename Value="ubuilder.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="FBuilder"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UBuilder"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="4"/>
-        <UsageCount Value="21"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="ubrand.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="FBrand"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UBrand"/>
-        <EditorIndex Value="5"/>
-        <UsageCount Value="21"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="ucategory.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="FCategories"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UCategory"/>
-        <EditorIndex Value="6"/>
-        <TopLine Value="22"/>
-        <CursorPos X="27" Y="45"/>
-        <UsageCount Value="21"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="uscale.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="FScales"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="UScale"/>
-        <EditorIndex Value="1"/>
-        <UsageCount Value="21"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="ucountries.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="FCountries"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uCountries"/>
-        <EditorIndex Value="2"/>
-        <UsageCount Value="21"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="umodels.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="FModels"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uModels"/>
-        <EditorIndex Value="3"/>
-        <UsageCount Value="21"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
       <Position>
-        <Filename Value="ppale.pas"/>
-        <Caret Line="33" Column="46" TopLine="10"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="69" TopLine="40"/>
       </Position>
       <Position>
-        <Filename Value="ppale.pas"/>
-        <Caret Line="81" Column="3" TopLine="55"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="75" Column="3" TopLine="45"/>
       </Position>
       <Position>
-        <Filename Value="ppale.pas"/>
-        <Caret Line="77" Column="21" TopLine="61"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="79" Column="31" TopLine="49"/>
       </Position>
       <Position>
-        <Filename Value="ppale.pas"/>
-        <Caret Line="82" Column="19" TopLine="61"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="81" Column="32" TopLine="49"/>
       </Position>
       <Position>
-        <Filename Value="ppale.pas"/>
-        <Caret Line="10" Column="70" TopLine="37"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="52" Column="19" TopLine="39"/>
       </Position>
       <Position>
-        <Filename Value="ppale.pas"/>
-        <Caret Line="88" Column="3" TopLine="67"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="53" Column="19" TopLine="40"/>
       </Position>
       <Position>
-        <Filename Value="ppale.pas"/>
-        <Caret Line="104" Column="20" TopLine="70"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="54" Column="19" TopLine="41"/>
       </Position>
       <Position>
-        <Filename Value="ppale.pas"/>
-        <Caret Line="95" Column="23" TopLine="71"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="55" Column="19" TopLine="42"/>
       </Position>
       <Position>
-        <Filename Value="ucategory.pas"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="54" Column="19" TopLine="41"/>
       </Position>
       <Position>
-        <Filename Value="ucategory.pas"/>
-        <Caret Line="33" Column="3"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="53" Column="19" TopLine="40"/>
       </Position>
       <Position>
-        <Filename Value="ucategory.pas"/>
-        <Caret Line="34" Column="3"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="52" Column="19" TopLine="39"/>
       </Position>
       <Position>
-        <Filename Value="ucategory.pas"/>
-        <Caret Line="35" Column="3"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="55" Column="19" TopLine="42"/>
       </Position>
       <Position>
-        <Filename Value="ucategory.pas"/>
-        <Caret Line="41" Column="71" TopLine="11"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="54" Column="19" TopLine="41"/>
       </Position>
       <Position>
-        <Filename Value="ucategory.pas"/>
-        <Caret Line="52" Column="3" TopLine="19"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="55" Column="19" TopLine="42"/>
       </Position>
       <Position>
-        <Filename Value="ucategory.pas"/>
-        <Caret Line="45" Column="11" TopLine="22"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="59" Column="28" TopLine="59"/>
       </Position>
       <Position>
-        <Filename Value="ubrand.pas"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="85" Column="49" TopLine="67"/>
       </Position>
       <Position>
-        <Filename Value="umodels.pas"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="100" Column="5" TopLine="66"/>
       </Position>
       <Position>
-        <Filename Value="ucountries.pas"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="101" Column="5" TopLine="67"/>
       </Position>
       <Position>
-        <Filename Value="uscale.pas"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="102" Column="5" TopLine="68"/>
       </Position>
       <Position>
-        <Filename Value="ubuilder.pas"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="104" Column="5" TopLine="70"/>
       </Position>
       <Position>
-        <Filename Value="umodels.pas"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="120" Column="5" TopLine="90"/>
       </Position>
       <Position>
-        <Filename Value="ucountries.pas"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="132" Column="105" TopLine="107"/>
       </Position>
       <Position>
-        <Filename Value="ubrand.pas"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="117" Column="13" TopLine="92"/>
       </Position>
       <Position>
-        <Filename Value="ubuilder.pas"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="86" Column="4" TopLine="75"/>
       </Position>
       <Position>
-        <Filename Value="uscale.pas"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="67" Column="30" TopLine="67"/>
       </Position>
       <Position>
-        <Filename Value="ubrand.pas"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="126" TopLine="111"/>
       </Position>
       <Position>
-        <Filename Value="ubuilder.pas"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="125" Column="28" TopLine="114"/>
       </Position>
       <Position>
-        <Filename Value="umodels.pas"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="9" Column="43"/>
       </Position>
       <Position>
-        <Filename Value="ucountries.pas"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="50" Column="12" TopLine="31"/>
       </Position>
       <Position>
-        <Filename Value="uscale.pas"/>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="125" Column="6" TopLine="115"/>
       </Position>
     </JumpHistory>
     <RunParams>
@@ -252,6 +274,13 @@
         <WatchKind Value="wpkWrite"/>
         <Source Value="fperiod.pas"/>
         <Line Value="19"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="ppale.pas"/>
+        <Line Value="86"/>
       </Item>
     </BreakPoints>
   </Debugging>

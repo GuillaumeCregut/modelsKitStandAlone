@@ -26,7 +26,7 @@ type
     MIParams: TMenuItem;
     SQLite3Connection1: TSQLite3Connection;
     queryList: TSQLQuery;
-    SQLTransaction1: TSQLTransaction;
+    SQLTansac: TSQLTransaction;
     StatusBar1: TStatusBar;
     procedure FormCreate(Sender: TObject);
     procedure MIBuilderClick(Sender: TObject);
