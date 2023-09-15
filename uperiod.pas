@@ -30,6 +30,7 @@ type
     PopupMenu1: TPopupMenu;
     SQLPeriodList: TSQLQuery;
     procedure BAddPeriodClick(Sender: TObject);
+    procedure BUpdatePeriodClick(Sender: TObject);
     procedure EPeriodNameChange(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure LBPeriodDblClick(Sender: TObject);
@@ -125,6 +126,22 @@ begin
     FPpale.SQLTansac.Commit;
     LoadTable();
   end;
+end;
+
+procedure TFPeriod.BUpdatePeriodClick(Sender: TObject);
+var
+  periodRecord: TPeriodRec;
+begin
+  periodRecord:=Listperiod[IndexSelect];
+   if(MessageDlg('Modificaion','Voulez-vous modifier '+ periodRecord.name+' par : '+EPeriodName.Text+' ?',mtWarning,[mboK,mbCancel],0,mbCancel)=mrOK)then
+   begin
+      SQLPeriodList.SQL.Text:='UPDATE period SET name=:name WHERE id='+IntToStr(periodRecord.id);
+      SQLPeriodList.Prepare;
+      SQLPeriodList.ParamByName('name').AsString:=EPeriodName.text;
+      SQLPeriodList.ExecSQL;
+      FPpale.SQLTansac.Commit;
+      LoadTable();
+   end;
 end;
 
 procedure TFPeriod.LBPeriodDblClick(Sender: TObject);

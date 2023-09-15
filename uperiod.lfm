@@ -71,6 +71,7 @@ object FPeriod: TFPeriod
       Top = 105
       Width = 75
       Caption = 'Modifier'
+      OnClick = BUpdatePeriodClick
       TabOrder = 2
     end
   end
