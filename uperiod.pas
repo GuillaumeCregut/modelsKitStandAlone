@@ -115,8 +115,6 @@ begin
 end;
 
 procedure TFPeriod.BAddPeriodClick(Sender: TObject);
-var
-  returnLine : integer;
 begin
   if(EPeriodName.text<>'') then
   begin
@@ -146,9 +144,12 @@ begin
   begin
     IndexSelect:=LBPeriod.ItemIndex;
     periodRecord:=Listperiod[IndexSelect];
-    if(MessageDlg('Suppression','Voulez-vous supprimer '+periodRecord.name+' ?',mtWarning,[mboK,mbCancel],0,mbCancel)=mrOK)then
+    if(MessageDlg('Suppression','Voulez-vous supprimer '+ periodRecord.name+' ?',mtWarning,[mboK,mbCancel],0,mbCancel)=mrOK)then
     begin
-       EPeriodName.Text:='suppression';
+      SQLPeriodList.SQL.Text:='DELETE FROM period WHERE id='+IntToStr(periodRecord.id);
+      SQLPeriodList.ExecSQL;
+      FPpale.SQLTansac.Commit;
+      LoadTable();
     end;
   end;
 end;
