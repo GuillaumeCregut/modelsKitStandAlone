@@ -10,9 +10,9 @@ object FScales: TFScales
   Position = poOwnerFormCenter
   LCLVersion = '2.2.6.0'
   object LBScale: TListBox
-    Left = 40
+    Left = 24
     Height = 304
-    Top = 32
+    Top = 40
     Width = 232
     ItemHeight = 0
     OnDblClick = LBScaleDblClick
@@ -64,6 +64,16 @@ object FScales: TFScales
       OnChange = EScaleChange
       TabOrder = 2
     end
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 21
+    Top = 8
+    Width = 208
+    Caption = 'Liste des échelles enregistrées'
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
   end
   object QueryScale: TSQLQuery
     FieldDefs = <>

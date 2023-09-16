@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="43" Y="22"/>
-        <UsageCount Value="47"/>
+        <UsageCount Value="50"/>
       </Unit>
       <Unit>
         <Filename Value="ppale.pas"/>
@@ -21,7 +21,7 @@
         <UnitName Value="Ppale"/>
         <TopLine Value="76"/>
         <CursorPos Y="86"/>
-        <UsageCount Value="47"/>
+        <UsageCount Value="50"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -34,9 +34,8 @@
         <UnitName Value="UPeriod"/>
         <EditorIndex Value="1"/>
         <TopLine Value="54"/>
-        <CursorPos X="33" Y="95"/>
-        <ComponentState Value="1"/>
-        <UsageCount Value="33"/>
+        <CursorPos X="51" Y="71"/>
+        <UsageCount Value="36"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -47,8 +46,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="UBuilder"/>
-        <EditorIndex Value="5"/>
-        <UsageCount Value="30"/>
+        <EditorIndex Value="6"/>
+        <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -59,8 +58,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="UBrand"/>
-        <EditorIndex Value="6"/>
-        <UsageCount Value="30"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="68"/>
+        <CursorPos X="20" Y="82"/>
+        <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -74,7 +76,7 @@
         <EditorIndex Value="7"/>
         <TopLine Value="31"/>
         <CursorPos X="27" Y="54"/>
-        <UsageCount Value="30"/>
+        <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -85,11 +87,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="UScale"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="115"/>
-        <CursorPos X="38" Y="132"/>
-        <UsageCount Value="30"/>
+        <TopLine Value="50"/>
+        <CursorPos X="19" Y="75"/>
+        <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -101,9 +102,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uCountries"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="148"/>
-        <CursorPos X="148" Y="161"/>
-        <UsageCount Value="30"/>
+        <TopLine Value="52"/>
+        <CursorPos X="26" Y="72"/>
+        <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -114,8 +115,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uModels"/>
-        <EditorIndex Value="4"/>
-        <UsageCount Value="30"/>
+        <EditorIndex Value="5"/>
+        <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -146,91 +147,6 @@
     </Units>
     <JumpHistory HistoryIndex="29">
       <Position>
-        <Filename Value="ucountries.pas"/>
-      </Position>
-      <Position>
-        <Filename Value="ucountries.pas"/>
-        <Caret Line="46" Column="5" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="uscale.pas"/>
-      </Position>
-      <Position>
-        <Filename Value="ucategory.pas"/>
-        <Caret Line="46" Column="27" TopLine="23"/>
-      </Position>
-      <Position>
-        <Filename Value="ucountries.pas"/>
-        <Caret Line="57" Column="5" TopLine="23"/>
-      </Position>
-      <Position>
-        <Filename Value="ucountries.pas"/>
-        <Caret Line="92" Column="13" TopLine="63"/>
-      </Position>
-      <Position>
-        <Filename Value="ucountries.pas"/>
-        <Caret Line="74" Column="18" TopLine="58"/>
-      </Position>
-      <Position>
-        <Filename Value="ucountries.pas"/>
-        <Caret Line="76" Column="18" TopLine="60"/>
-      </Position>
-      <Position>
-        <Filename Value="ucountries.pas"/>
-        <Caret Line="101" Column="5" TopLine="74"/>
-      </Position>
-      <Position>
-        <Filename Value="ucountries.pas"/>
-        <Caret Line="119" Column="16" TopLine="90"/>
-      </Position>
-      <Position>
-        <Filename Value="ucountries.pas"/>
-        <Caret Line="100" Column="16" TopLine="83"/>
-      </Position>
-      <Position>
-        <Filename Value="ucountries.pas"/>
-        <Caret Line="89" Column="3" TopLine="70"/>
-      </Position>
-      <Position>
-        <Filename Value="ucountries.pas"/>
-        <Caret Line="99" Column="46" TopLine="75"/>
-      </Position>
-      <Position>
-        <Filename Value="ucountries.pas"/>
-        <Caret Line="151" Column="15" TopLine="123"/>
-      </Position>
-      <Position>
-        <Filename Value="ucountries.pas"/>
-        <Caret Line="163" TopLine="143"/>
-      </Position>
-      <Position>
-        <Filename Value="ucountries.pas"/>
-        <Caret Line="164" TopLine="143"/>
-      </Position>
-      <Position>
-        <Filename Value="uscale.pas"/>
-      </Position>
-      <Position>
-        <Filename Value="uscale.pas"/>
-        <Caret Line="46" Column="7" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="uscale.pas"/>
-        <Caret Line="34" Column="36" TopLine="27"/>
-      </Position>
-      <Position>
-        <Filename Value="uscale.pas"/>
-        <Caret Line="68" Column="5" TopLine="38"/>
-      </Position>
-      <Position>
-        <Filename Value="uscale.pas"/>
-        <Caret Line="74" Column="5" TopLine="44"/>
-      </Position>
-      <Position>
-        <Filename Value="uscale.pas"/>
-        <Caret Line="107" Column="91" TopLine="75"/>
-      </Position>
-      <Position>
         <Filename Value="uscale.pas"/>
         <Caret Line="94" Column="54" TopLine="75"/>
       </Position>
@@ -259,8 +175,95 @@
         <Caret Line="179" Column="29" TopLine="73"/>
       </Position>
       <Position>
+        <Filename Value="ubrand.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="46" Column="5" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="52" Column="5" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="58" Column="5" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="69" Column="5" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="65" Column="5" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="45" Column="112" TopLine="27"/>
+      </Position>
+      <Position>
         <Filename Value="uscale.pas"/>
-        <Caret Line="130" Column="23" TopLine="148"/>
+        <Caret Line="132" Column="38" TopLine="115"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="39" Column="36" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="55" Column="21" TopLine="34"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="58" Column="3" TopLine="34"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="41" Column="24" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="82" Column="24" TopLine="55"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="114" Column="38" TopLine="90"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="148" Column="29" TopLine="114"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="78" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="77" Column="101" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="78" Column="101" TopLine="67"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="82" Column="28" TopLine="62"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="99" Column="3" TopLine="70"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="98" Column="3" TopLine="69"/>
+      </Position>
+      <Position>
+        <Filename Value="ubrand.pas"/>
+        <Caret Line="97" Column="3" TopLine="68"/>
+      </Position>
+      <Position>
+        <Filename Value="uperiod.pas"/>
+        <Caret Line="77" Column="5" TopLine="54"/>
       </Position>
     </JumpHistory>
     <RunParams>

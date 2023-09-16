@@ -22,6 +22,7 @@ type
     EScale: TEdit;
     GroupBox1: TGroupBox;
     Label1: TLabel;
+    Label2: TLabel;
     LBScale: TListBox;
     PopupMenu1: TPopupMenu;
     PUMDeleteCountry: TMenuItem;
@@ -64,10 +65,14 @@ begin
   QueryScale.Close;
   QueryScale.SQL.Clear;
   LBScale.Items.Clear;
+  QueryScale.SQL.Text:='SELECT count(*) as nbr FROM scale';
+  QueryScale.Open;
+  count:=DSScale.DataSet.FieldByName('nbr').value;
+  QueryScale.Close;
+  QueryScale.SQL.Clear;
   sql:='SELECT id, name from scale ORDER BY name';
   QueryScale.SQL.Text:=sql;
   QueryScale.Open;
-  count:=DSScale.DataSet.RecordCount;
   setLength(ListScales,count);
   for i:=0 to count-1 do
   begin
@@ -119,6 +124,7 @@ begin
      QueryScale.ParamByName('name').AsString:=EScale.Text;
      QueryScale.ExecSQL;
      FPpale.SQLTansac.Commit;
+     EScale.Text:='';
      LoadTable();
   end;
 end;
@@ -139,6 +145,7 @@ begin
       FPpale.SQLTansac.Commit;
       LoadTable();
     end;
+    EScale.Text:='';
   end;
 end;
 
@@ -164,8 +171,8 @@ end;
 
 procedure TFScales.FormShow(Sender: TObject);
 begin
-   EScale.Text:='';
-   IndexSelect:=-1;
+  EScale.Text:='';
+  IndexSelect:=-1;
   BUpdateScale.Enabled:=false;
   BAddScale.Enabled:=false;
   LoadTable();

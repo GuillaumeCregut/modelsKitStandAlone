@@ -1,19 +1,78 @@
 object FBrand: TFBrand
-  Left = 1251
-  Height = 445
-  Top = 145
+  Left = 923
+  Height = 837
+  Top = 192
   Width = 658
   Caption = 'Marques'
-  ClientHeight = 445
+  ClientHeight = 837
   ClientWidth = 658
+  OnShow = FormShow
   LCLVersion = '2.2.6.0'
   object LBBrand: TListBox
     Left = 32
     Height = 304
-    Top = 32
+    Top = 40
     Width = 240
     ItemHeight = 0
+    OnDblClick = LBBrandDblClick
+    PopupMenu = PopupMenu1
     TabOrder = 0
+  end
+  object GroupBox1: TGroupBox
+    Left = 288
+    Height = 184
+    Top = 112
+    Width = 289
+    Caption = 'Ajouter / Modifier'
+    ClientHeight = 164
+    ClientWidth = 285
+    TabOrder = 1
+    object BAddCountry: TButton
+      Left = 30
+      Height = 25
+      Top = 128
+      Width = 75
+      Caption = 'Ajouter'
+      OnClick = BAddCountryClick
+      TabOrder = 0
+    end
+    object BUpdateCountry: TButton
+      Left = 151
+      Height = 25
+      Top = 127
+      Width = 75
+      Caption = 'Modifier'
+      OnClick = BUpdateCountryClick
+      TabOrder = 1
+    end
+    object Label1: TLabel
+      Left = 21
+      Height = 21
+      Top = 26
+      Width = 42
+      Caption = 'Nom :'
+      Font.Height = -16
+      ParentColor = False
+      ParentFont = False
+    end
+    object EBrand: TEdit
+      Left = 20
+      Height = 23
+      Top = 56
+      Width = 236
+      OnChange = EBrandChange
+      TabOrder = 2
+    end
+  end
+  object Label2: TLabel
+    Left = 41
+    Height = 21
+    Top = 13
+    Width = 214
+    Caption = 'Liste des marques enregistrées'
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
   end
   object QueryBrand: TSQLQuery
     FieldDefs = <>
@@ -26,7 +85,20 @@ object FBrand: TFBrand
   end
   object DSBrand: TDataSource
     DataSet = QueryBrand
+    Enabled = False
     Left = 608
     Top = 16
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 488
+    Top = 16
+    object PUMUpdateBrand: TMenuItem
+      Caption = 'Modifier'
+      OnClick = PUMUpdateBrandClick
+    end
+    object PUMDeleteBrand: TMenuItem
+      Caption = 'Supprimer'
+      OnClick = PUMDeleteBrandClick
+    end
   end
 end
