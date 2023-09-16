@@ -60,7 +60,7 @@ var
   i,count, id: Integer;
   countryRecord: TCountryRec;
 begin
-  IndexSelect:=0;
+  IndexSelect:=-1;
   Ecountry.Text:='';
   QueryCountry.Close;
   QueryCountry.SQL.Clear;
