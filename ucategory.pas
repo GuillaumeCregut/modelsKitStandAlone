@@ -5,15 +5,24 @@ unit UCategory;
 interface
 
 uses
-  Classes, SysUtils, DB, SQLDB, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, DB, SQLDB, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  Menus;
 
 type
 
   { TFCategories }
 
   TFCategories = class(TForm)
+    BAddCountry: TButton;
+    BUpdateCountry: TButton;
     DBCategory: TDataSource;
+    Ecountry: TEdit;
+    GroupBox1: TGroupBox;
+    Label1: TLabel;
     LBCategory: TListBox;
+    PopupMenu1: TPopupMenu;
+    PUMDeleteCountry: TMenuItem;
+    PUMUpdateCountry: TMenuItem;
     QueryCategory: TSQLQuery;
     procedure FormShow(Sender: TObject);
   private

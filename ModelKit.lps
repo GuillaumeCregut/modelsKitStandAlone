@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="43" Y="22"/>
-        <UsageCount Value="43"/>
+        <UsageCount Value="45"/>
       </Unit>
       <Unit>
         <Filename Value="ppale.pas"/>
@@ -19,9 +19,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Ppale"/>
-        <TopLine Value="25"/>
-        <CursorPos Y="86"/>
-        <UsageCount Value="43"/>
+        <CursorPos X="60" Y="9"/>
+        <UsageCount Value="45"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -32,11 +31,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="UPeriod"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="7"/>
-        <TopLine Value="130"/>
-        <CursorPos X="6" Y="143"/>
-        <UsageCount Value="29"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="117"/>
+        <CursorPos X="29" Y="127"/>
+        <UsageCount Value="31"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -47,8 +45,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="UBuilder"/>
-        <EditorIndex Value="4"/>
-        <UsageCount Value="26"/>
+        <EditorIndex Value="5"/>
+        <UsageCount Value="28"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -59,8 +57,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="UBrand"/>
-        <EditorIndex Value="5"/>
-        <UsageCount Value="26"/>
+        <EditorIndex Value="6"/>
+        <UsageCount Value="28"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -71,10 +69,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="UCategory"/>
-        <EditorIndex Value="6"/>
-        <TopLine Value="22"/>
-        <CursorPos X="27" Y="45"/>
-        <UsageCount Value="26"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="31"/>
+        <CursorPos X="27" Y="54"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="28"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -85,8 +84,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="UScale"/>
-        <EditorIndex Value="1"/>
-        <UsageCount Value="26"/>
+        <EditorIndex Value="3"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="28"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -97,8 +97,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uCountries"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <UsageCount Value="26"/>
+        <TopLine Value="143"/>
+        <CursorPos Y="163"/>
+        <UsageCount Value="28"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -109,8 +112,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uModels"/>
-        <EditorIndex Value="3"/>
-        <UsageCount Value="26"/>
+        <EditorIndex Value="4"/>
+        <UsageCount Value="28"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -140,70 +143,6 @@
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="uperiod.pas"/>
-        <Caret Line="75" Column="3" TopLine="45"/>
-      </Position>
-      <Position>
-        <Filename Value="uperiod.pas"/>
-        <Caret Line="79" Column="31" TopLine="49"/>
-      </Position>
-      <Position>
-        <Filename Value="uperiod.pas"/>
-        <Caret Line="81" Column="32" TopLine="49"/>
-      </Position>
-      <Position>
-        <Filename Value="uperiod.pas"/>
-        <Caret Line="52" Column="19" TopLine="39"/>
-      </Position>
-      <Position>
-        <Filename Value="uperiod.pas"/>
-        <Caret Line="53" Column="19" TopLine="40"/>
-      </Position>
-      <Position>
-        <Filename Value="uperiod.pas"/>
-        <Caret Line="54" Column="19" TopLine="41"/>
-      </Position>
-      <Position>
-        <Filename Value="uperiod.pas"/>
-        <Caret Line="55" Column="19" TopLine="42"/>
-      </Position>
-      <Position>
-        <Filename Value="uperiod.pas"/>
-        <Caret Line="54" Column="19" TopLine="41"/>
-      </Position>
-      <Position>
-        <Filename Value="uperiod.pas"/>
-        <Caret Line="53" Column="19" TopLine="40"/>
-      </Position>
-      <Position>
-        <Filename Value="uperiod.pas"/>
-        <Caret Line="52" Column="19" TopLine="39"/>
-      </Position>
-      <Position>
-        <Filename Value="uperiod.pas"/>
-        <Caret Line="55" Column="19" TopLine="42"/>
-      </Position>
-      <Position>
-        <Filename Value="uperiod.pas"/>
-        <Caret Line="54" Column="19" TopLine="41"/>
-      </Position>
-      <Position>
-        <Filename Value="uperiod.pas"/>
-        <Caret Line="55" Column="19" TopLine="42"/>
-      </Position>
-      <Position>
-        <Filename Value="uperiod.pas"/>
-        <Caret Line="59" Column="28" TopLine="59"/>
-      </Position>
-      <Position>
-        <Filename Value="uperiod.pas"/>
-        <Caret Line="85" Column="49" TopLine="67"/>
-      </Position>
-      <Position>
-        <Filename Value="uperiod.pas"/>
-        <Caret Line="100" Column="5" TopLine="66"/>
-      </Position>
       <Position>
         <Filename Value="uperiod.pas"/>
         <Caret Line="101" Column="5" TopLine="67"/>
@@ -259,6 +198,68 @@
       <Position>
         <Filename Value="uperiod.pas"/>
         <Caret Line="157" Column="108" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="ucountries.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="ucountries.pas"/>
+        <Caret Line="46" Column="5" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="uscale.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="ucategory.pas"/>
+        <Caret Line="46" Column="27" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="ucountries.pas"/>
+        <Caret Line="57" Column="5" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="ucountries.pas"/>
+        <Caret Line="92" Column="13" TopLine="63"/>
+      </Position>
+      <Position>
+        <Filename Value="ucountries.pas"/>
+        <Caret Line="74" Column="18" TopLine="58"/>
+      </Position>
+      <Position>
+        <Filename Value="ucountries.pas"/>
+        <Caret Line="76" Column="18" TopLine="60"/>
+      </Position>
+      <Position>
+        <Filename Value="ucountries.pas"/>
+        <Caret Line="101" Column="5" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="ucountries.pas"/>
+        <Caret Line="119" Column="16" TopLine="90"/>
+      </Position>
+      <Position>
+        <Filename Value="ucountries.pas"/>
+        <Caret Line="100" Column="16" TopLine="83"/>
+      </Position>
+      <Position>
+        <Filename Value="ucountries.pas"/>
+        <Caret Line="89" Column="3" TopLine="70"/>
+      </Position>
+      <Position>
+        <Filename Value="ucountries.pas"/>
+        <Caret Line="99" Column="46" TopLine="75"/>
+      </Position>
+      <Position>
+        <Filename Value="ucountries.pas"/>
+        <Caret Line="151" Column="15" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="ucountries.pas"/>
+        <Caret Line="163" TopLine="143"/>
+      </Position>
+      <Position>
+        <Filename Value="ucountries.pas"/>
+        <Caret Line="164" TopLine="143"/>
       </Position>
     </JumpHistory>
     <RunParams>
