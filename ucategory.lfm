@@ -1,7 +1,7 @@
 object FCategories: TFCategories
-  Left = 1277
+  Left = 832
   Height = 449
-  Top = 484
+  Top = 383
   Width = 653
   Caption = 'Catégories'
   ClientHeight = 449
@@ -16,6 +16,49 @@ object FCategories: TFCategories
     ItemHeight = 0
     TabOrder = 0
   end
+  object GroupBox1: TGroupBox
+    Left = 320
+    Height = 184
+    Top = 112
+    Width = 289
+    Caption = 'Ajouter / Modifier'
+    ClientHeight = 164
+    ClientWidth = 285
+    TabOrder = 1
+    object BAddCountry: TButton
+      Left = 30
+      Height = 25
+      Top = 127
+      Width = 75
+      Caption = 'Ajouter'
+      TabOrder = 0
+    end
+    object BUpdateCountry: TButton
+      Left = 151
+      Height = 25
+      Top = 132
+      Width = 75
+      Caption = 'Modifier'
+      TabOrder = 1
+    end
+    object Label1: TLabel
+      Left = 21
+      Height = 21
+      Top = 26
+      Width = 42
+      Caption = 'Nom :'
+      Font.Height = -16
+      ParentColor = False
+      ParentFont = False
+    end
+    object Ecountry: TEdit
+      Left = 20
+      Height = 23
+      Top = 56
+      Width = 236
+      TabOrder = 2
+    end
+  end
   object DBCategory: TDataSource
     DataSet = QueryCategory
     Left = 592
@@ -29,5 +72,15 @@ object FCategories: TFCategories
     Macros = <>
     Left = 584
     Top = 64
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 332
+    Top = 75
+    object PUMUpdateCountry: TMenuItem
+      Caption = 'Modifier'
+    end
+    object PUMDeleteCountry: TMenuItem
+      Caption = 'Supprimer'
+    end
   end
 end

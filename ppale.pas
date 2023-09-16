@@ -5,8 +5,8 @@ unit Ppale;
 interface
 
 uses
-  Classes, SysUtils, DB, BufDataset, SQLite3DS, SQLite3Conn, SQLDB, Forms,
-  Controls, Graphics, Dialogs, DBGrids, DBCtrls, ComCtrls, StdCtrls, Grids,
+  Classes, SysUtils, DB, BufDataset, SQLite3Conn, SQLDB, Forms,
+  Controls, Graphics, Dialogs, DBGrids, DBCtrls, ComCtrls,
   Menus, UPeriod, UBuilder,UBrand,UCategory,uModels,UScale,uCountries;
 
 type

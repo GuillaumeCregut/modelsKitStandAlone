@@ -5,7 +5,7 @@ unit UPeriod;
 interface
 
 uses
-  Classes, SysUtils, SQLite3Conn, SQLDB, DB, SQLite3DS, Forms, Controls,
+  Classes, SysUtils, SQLite3Conn, SQLDB, DB, Forms, Controls,
   Graphics, Dialogs, StdCtrls, Menus;
 
 type
