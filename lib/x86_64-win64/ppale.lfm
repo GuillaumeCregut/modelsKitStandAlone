@@ -1,7 +1,7 @@
 object FPpale: TFPpale
-  Left = 327
+  Left = 464
   Height = 658
-  Top = 168
+  Top = 174
   Width = 1330
   Caption = 'Models Kit Database'
   ClientHeight = 638
@@ -9,6 +9,7 @@ object FPpale: TFPpale
   FormStyle = fsMDIForm
   Menu = MainMenu1
   OnCreate = FormCreate
+  Position = poDesktopCenter
   LCLVersion = '2.2.6.0'
   object StatusBar1: TStatusBar
     Left = 0

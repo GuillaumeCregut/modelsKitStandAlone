@@ -1,11 +1,13 @@
 object FScales: TFScales
-  Left = 228
+  Left = 411
   Height = 451
-  Top = 502
+  Top = 281
   Width = 658
   Caption = 'Echelles'
   ClientHeight = 451
   ClientWidth = 658
+  OnShow = FormShow
+  Position = poOwnerFormCenter
   LCLVersion = '2.2.6.0'
   object LBScale: TListBox
     Left = 40
@@ -13,6 +15,8 @@ object FScales: TFScales
     Top = 32
     Width = 232
     ItemHeight = 0
+    OnDblClick = LBScaleDblClick
+    PopupMenu = PopupMenu1
     TabOrder = 0
   end
   object GroupBox1: TGroupBox
@@ -24,20 +28,22 @@ object FScales: TFScales
     ClientHeight = 164
     ClientWidth = 285
     TabOrder = 1
-    object BAddCountry: TButton
+    object BAddScale: TButton
       Left = 30
+      Height = 25
+      Top = 128
+      Width = 75
+      Caption = 'Ajouter'
+      OnClick = BAddScaleClick
+      TabOrder = 0
+    end
+    object BUpdateScale: TButton
+      Left = 168
       Height = 25
       Top = 127
       Width = 75
-      Caption = 'Ajouter'
-      TabOrder = 0
-    end
-    object BUpdateCountry: TButton
-      Left = 151
-      Height = 25
-      Top = 132
-      Width = 75
       Caption = 'Modifier'
+      OnClick = BUpdateScaleClick
       TabOrder = 1
     end
     object Label1: TLabel
@@ -50,15 +56,16 @@ object FScales: TFScales
       ParentColor = False
       ParentFont = False
     end
-    object Ecountry: TEdit
+    object EScale: TEdit
       Left = 20
       Height = 23
       Top = 56
       Width = 236
+      OnChange = EScaleChange
       TabOrder = 2
     end
   end
-  object QureyScale: TSQLQuery
+  object QueryScale: TSQLQuery
     FieldDefs = <>
     Database = FPpale.SQLite3Connection1
     Transaction = FPpale.SQLTansac
@@ -68,18 +75,20 @@ object FScales: TFScales
     Top = 8
   end
   object DSScale: TDataSource
-    DataSet = QureyScale
+    DataSet = QueryScale
     Left = 560
     Top = 8
   end
   object PopupMenu1: TPopupMenu
-    Left = 332
-    Top = 75
-    object PUMUpdateCountry: TMenuItem
+    Left = 448
+    Top = 32
+    object PUMUpdateScale: TMenuItem
       Caption = 'Modifier'
+      OnClick = PUMUpdateScaleClick
     end
     object PUMDeleteCountry: TMenuItem
       Caption = 'Supprimer'
+      OnClick = PUMDeleteCountryClick
     end
   end
 end
