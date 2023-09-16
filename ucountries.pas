@@ -65,10 +65,14 @@ begin
   QueryCountry.Close;
   QueryCountry.SQL.Clear;
   LBCountry.Items.Clear;
+  QueryCountry.SQL.Text:='SELECT count(*) as nbr FROM country';
+  QueryCountry.Open;
+  count:=DSCountry.DataSet.FieldByName('nbr').value;
+  QueryCountry.Close;
+  QueryCountry.SQL.Clear;
   sql:='SELECT id, name from country ORDER BY name';
   QueryCountry.SQL.Text:=sql;
   QueryCountry.Open;
-  count:=DSCountry.DataSet.RecordCount;
   setLength(ListCountries,count);
   for i:=0 to count-1 do
   begin
@@ -149,6 +153,7 @@ begin
     QueryCountry.ParamByName('name').AsString:=ECountry.text;
     QueryCountry.ExecSQL;
     FPpale.SQLTansac.Commit;
+    Ecountry.Text:='';
     LoadTable();
   end;
 end;
@@ -165,6 +170,7 @@ begin
       QueryCountry.ParamByName('name').AsString:=Ecountry.text;
       QueryCountry.ExecSQL;
       FPpale.SQLTansac.Commit;
+      Ecountry.Text:='';
       LoadTable();
    end;
 end;

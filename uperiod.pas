@@ -66,11 +66,15 @@ begin
   SQLPeriodList.Close;
   SQLPeriodList.sql.Clear;
   LBPeriod.Items.Clear;
-  //Load good query of period
+  SQLPeriodList.SQL.Text:='SELECT count(*) as nbr FROM period' ;
+  SQLPeriodList.Open;
+  count:=DSPeriod.DataSet.FieldByName('nbr').value;
+  SQLPeriodList.Close;
+  SQLPeriodList.sql.Clear;
   sql:='SELECT id,name from period';
   SQLPeriodList.SQL.Add(sql);
   SQLPeriodList.Open;
-  count:=DSPeriod.DataSet.RecordCount;
+  //count:=DSPeriod.DataSet.RecordCount;
   SetLength(Listperiod,count);
   for i:=0 to count-1 do
   begin
